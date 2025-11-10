@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;/*for the entire screen*/ 
+}
+
+.bodyie{
+    background-color: aliceblue;
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+}
+.hdre{
+    background-color: black;
+    padding:5px;
+    text-align: center;
+    border-radius: 8px;
+    color: gold;
+}
+.nav-hdre{
+    gap:25px;
+    display:flex;
+    justify-content: center;
+
+}
+.nav-hdre a{
+    text-decoration: none;
+    color:white;
+    transition: o.3;
+    cursor: pointer; 
+}
+.nav-hdre a:hover{
+    color:blueviolet;
+}
+.search-icon{
+    font-size: 18px;
+}
+.lgn-box{
+    background: rgb(245, 248, 249);
+    width: 300px;
+    height: 280px;
+    margin: auto;
+    margin-top: 50px; 
+    border-radius: 8px;
+    box-shadow: 3px 4px 6px gold;
+}
+#login-form input{
+    padding: 5px;
+    border-radius: 5px;
+    outline-color: rgb(77, 18, 18);
+    border:none;
+}
+.btn{
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    color: black;
+    background-color: white;
+}
+.btn:hover{
+    background-color: rgb(236, 236, 43);
+}
+
+p a:hover{
+    color: pink;
+}
+.logo{
+    width: 60px;
+    height: 60px;
+    background-color: white ;
+    border-radius: 50% ;
+}
+.hme-header{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    position: sticky;
+    align-items: center;
+    z-index: 10;
+}
+.hme-nav{
+    gap: 20px;
+    display: flex;
+}
+.hme-nav a{
+    text-decoration: none;
+    color: gold;
+    transition: color 0.3s;
+}
+.hme-nav a:hover{
+    color: greenyellow;
+}
+#greeting{
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+.hme-top{
+    background-color: blanchedalmond;
+    padding: 10px;
+}
+.srch{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.srch-bar{
+    display: flex;
+    gap: 5px;
+    background-color: white;
+    padding:10px 15px;
+    border-radius: 50px;
+    box-shadow: 0 2px 10px;/*right,bottom,fade for top its negative-*/
+    width: 90%;
+    max-width: 500px;/*limiting size*/
+}
+.srch-bar input{
+    border: none;
+    flex: 1;/*stretching  items*/
+    outline: none;
+    cursor: pointer;
+    padding: 8px;
+    font-size: 16px;
+}
+.srch-bar:hover{
+    box-shadow: 0 4px 14px;
+}
+.srch-bar select{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 14px;
+    background-color: rgba(160, 155, 155, 0.299);
+    border-radius: 15px;
+    padding: 6px 12px;/*top,sideways*/
+
+}
+.srch-bar select:hover{
+    color: blueviolet;
+}
+.houses{
+    text-align: center;
+    padding: 15px;
+}
+.houses h2{
+    color: black;
+    font-family:"Playfair display", serif;
+    font-weight: 700;
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+.pics{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;/*space between items*/
+    justify-items: center;
+    align-items: centre;
+}
+/*to allow perfect display in smaller screens*/
+@media screen and(max-width:600px){
+    .pics{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+.pic-crd{
+    background-color: white;
+    border-radius: 5px;
+    padding: 15px;
+    width: 100%;
+    max-width: 300px;/*ajust the item okay*/
+}
+.pic-crd:hover{
+    transform: translateY(-5px);/* hovering- is for hover top pixels its by what size*/
+}
+.pic-crd img{
+    width: 100%;
+    border-radius: 10px;
+}
+.pic-crd a button{
+    background-color: rgba(0, 0, 255, 0.231);
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor:pointer;
+}
+.pic-crd a button:hover{
+    
+    background-color: purple;
+}
+.ftr{
+    padding: 10px;
+    background-color: rgb(185, 196, 196);
+    text-align: center;
+    font-size: 20px;
+    bottom: 0;/*should emain at the bottom*/
+}
