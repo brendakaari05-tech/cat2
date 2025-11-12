@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>house 1</title>
+    <title>House1</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
     <link rel="stylesheet" href="style.css">
 </head>
-<body class= "bodyie">
-
+<body class="bodyie">
     <header class="hme-header">
         <div class="logo"></div>
         <nav class="hme-nav">
@@ -19,27 +18,45 @@
         </nav>
     </header>
     <section class="hme-top">
-        <h1><i>Blue Moon</i></h1><br>
-        <p><i class="fa fa-location-dot"></i><b>location:</b>
-            kenya.
-        </p>
+        <h1><i>Zenith Point</i></h1><br>
+        <p><i class="fa fa-location-dot"></i><b> location:</b>kenya.</p>
     </section>
 
     <section class="slide-pic">
             <div class="slider-wrapper">
+                <button class="prev"><i class="fa fa-chevron-left"></i></button>
             <div class="slider">
-
-                <img id="slider-1" src= "house1img1.jpg" alt="furnished room"> 
-                <img id="slider-2" src= "house1 img2.jpg" alt="room">
-                <img id="slider-3" src= "house1img2.jpg" alt="openspace">
+                <img src= "house1img1.jpg" alt="furnished room"> 
+                <img src= "house1img2.jpg" alt="room">
+                <img src= "house1img4.jpg" alt="openspace">
             </div>
-            </div>
-            <div class="slider-nav">
-            <a href="#slider-1"></a>
-            <a href="#slider-2"></a>
-            <a href="#slider-3"></a>
+                <button class="next"><i class="fa fa-chevron-right"></i></button>
             </div>
     </section>
-    
+
+    <section class="description">
+            <h2>Property Description</h2>
+            <p><b>Price:</b> <i>Ksh 10,000 / month </i></p>
+            <p><b>Details:</b><br> 
+                This spacious house offers high-speed wifi, ample living space, and reliable water supply.
+                 Perfect for individuals seeking comfort and convenience in a prime location.
+            </p>
+    </section>
+
+    <section class="iqry">
+            <h3>Contact the landlord</h3>
+            <form class="iqry-form">
+                <input type="text" name="name" placeholder="Your Name" required><br><br>
+                <input type="email" name="email" placeholder="Your Email" required><br><br>
+                <textarea name="message" placeholder="I'd like to rent..." rows="4" required></textarea><br><br>
+                <button class="btn" type="submit"><b>Send Inquiry</b></button>
+            </form>
+    </section>
+
+    <footer class="ftr">
+        <p>&copy; 2025 Comrade House</p>
+    </footer>
+
 </body>
+<script src="script.js"></script>
 </html>

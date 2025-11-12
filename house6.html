@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>House2</title>
+    <title>House6</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="bodyie">
@@ -15,36 +16,46 @@
                 <a href="contact.html">Contact</a>
                 <a href="help.html">Help</a>
         </nav>
-    <section class="hme-top">
-        <h2 id="greeting"></h2>
-        <h1><i>Welcome to Comrade Hub</i></h1><br>
-        <p><b>For all your house inquiries:</b>
-            wifi,space,water and prices.
-        </p>
-    </section>
     </header>
-      <section class="hme-top">
-        <h1><i>Blue Moon</i></h1><br>
-        <p><i class="fa fa-location-dot"></i><b>location:</b>
-            kenya.
-        </p>
+    <section class="hme-top">
+        <h1><i>Kingdom</i></h1><br>
+        <p><i class="fa fa-location-dot"></i><b> location:</b>kenya.</p>
     </section>
 
     <section class="slide-pic">
             <div class="slider-wrapper">
+                <button class="prev"><i class="fa fa-chevron-left"></i></button>
             <div class="slider">
-
-                <img id="slider-1" src= "house6img3.jpg" alt="furnished room"> 
-                <img id="slider-2" src= "house6img2.jpg" alt="room">
-                <img id="slider-3" src= "house 6img1.jpg" alt="openspace">
+                <img src= "house6img1.jpg" alt="furnished room"> 
+                <img src= "house6img2.jpg" alt="room">
+                <img src= "house6img3.jpg" alt="openspace">
             </div>
-            </div>
-            <div class="slider-nav">
-            <a href="#slider-1"></a>
-            <a href="#slider-2"></a>
-            <a href="#slider-3"></a>
+                <button class="next"><i class="fa fa-chevron-right"></i></button>
             </div>
     </section>
-</body>
 
+    <section class="description">
+            <h2>Property Description</h2>
+            <p><b>Price:</b> <i>Ksh 4,000 / month </i></p>
+            <p><b>Details:</b><br>
+                This is a bedsitter. It has a sitting area,bed area,kitchen and a washroom.
+            </p>
+    </section>
+
+    <section class="iqry">
+            <h3>Contact the landlord</h3>
+            <form class="iqry-form">
+                <input type="text" name="name" placeholder="Your Name" required><br><br>
+                <input type="email" name="email" placeholder="Your Email" required><br><br>
+                <textarea name="message" placeholder="I'd like to rent..." rows="4" required></textarea><br><br>
+                <button class="btn" type="submit"><b>Send Inquiry</b></button>
+            </form>
+    </section>
+
+    <footer class="ftr">
+        <p>&copy; 2025 Comrade House</p>
+    </footer>
+
+</body>
+<script src="script.js"></script>
 </html>
